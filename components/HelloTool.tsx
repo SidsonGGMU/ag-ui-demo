@@ -14,11 +14,7 @@ export function HelloTool() {
   useFrontendTool(
     {
       name: "sayHello",
-      description:
-        "Shows a one-time 'Hello' alert in the user's browser. " +
-        "Call this AT MOST ONCE per user request. It always returns a " +
-        "success result immediately - never call it again after it has " +
-        "returned status='success'.",
+      description: "Shows a  'Hello' alert in the user's browser. ",
       parameters: z.object({
         name: z
           .string()
